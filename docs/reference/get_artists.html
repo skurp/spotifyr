@@ -98,7 +98,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Get Artists</h1>
-    <small class="dont-index">Source: <a href='http://github.com/charlie86/spotifyr/blob/master/R/get_artists.R'><code>R/get_artists.R</code></a></small>
+    <small class="dont-index">Source: <a href='http://github.com/charlie86/spotifyr/blob/master/R/artists.R'><code>R/artists.R</code></a></small>
     <div class="hidden name"><code>get_artists.Rd</code></div>
     </div>
 
@@ -108,8 +108,8 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>get_artists</span>(<span class='no'>artist_name</span>, <span class='kw'>return_closest_artist</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
-  <span class='kw'>access_token</span> <span class='kw'>=</span> <span class='fu'><a href='get_spotify_access_token.html'>get_spotify_access_token</a></span>())</pre>
+    <pre class="usage"><span class='fu'>get_artists</span>(<span class='no'>artist_name</span>, <span class='kw'>return_closest_artist</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>offset</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>limit</span> <span class='kw'>=</span> <span class='fl'>20</span>, <span class='kw'>access_token</span> <span class='kw'>=</span> <span class='fu'><a href='get_spotify_access_token.html'>get_spotify_access_token</a></span>())</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -121,6 +121,14 @@
     <tr>
       <th>return_closest_artist</th>
       <td><p>Boolean for selecting the artist result with the closest match on Spotify's Search endpoint. Defaults to <code>TRUE</code>.</p></td>
+    </tr>
+    <tr>
+      <th>offset</th>
+      <td><p>Integer indicating the offset of the first artist to return. Defaults to 0 (Spotify's API default value).</p></td>
+    </tr>
+    <tr>
+      <th>limit</th>
+      <td><p>Integer indicating the max number of artists to return. Defaults to 20 (Spotify's API default value), max of 50.</p></td>
     </tr>
     <tr>
       <th>access_token</th>
@@ -147,7 +155,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Charlie Thompson.</p>
+  <p>Developed by Charlie Thompson, Josiah Parry, Donal Phipps, Tom Wolff.</p>
 </div>
 
 <div class="pkgdown">

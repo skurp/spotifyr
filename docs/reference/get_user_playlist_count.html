@@ -98,7 +98,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Get count of Spotify playlists for a given user</h1>
-    <small class="dont-index">Source: <a href='http://github.com/charlie86/spotifyr/blob/master/R/get_user_playlist_count.R'><code>R/get_user_playlist_count.R</code></a></small>
+    <small class="dont-index">Source: <a href='http://github.com/charlie86/spotifyr/blob/master/R/playlists.R'><code>R/playlists.R</code></a></small>
     <div class="hidden name"><code>get_user_playlist_count.Rd</code></div>
     </div>
 
@@ -108,8 +108,7 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>get_user_playlist_count</span>(<span class='no'>username</span>, <span class='kw'>access_token</span> <span class='kw'>=</span> <span class='fu'><a href='get_spotify_access_token.html'>get_spotify_access_token</a></span>(),
-  <span class='kw'>echo</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+    <pre class="usage"><span class='fu'>get_user_playlist_count</span>(<span class='no'>username</span>, <span class='kw'>access_token</span> <span class='kw'>=</span> <span class='fu'><a href='get_spotify_access_token.html'>get_spotify_access_token</a></span>())</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -121,10 +120,6 @@
     <tr>
       <th>access_token</th>
       <td><p>Spotify Web API token. Defaults to <code><a href='get_spotify_access_token.html'>spotifyr::get_spotify_access_token()</a></code>.</p></td>
-    </tr>
-    <tr>
-      <th>echo</th>
-      <td><p>Boolean for whether or not to print number of playlists for the given username. Defaults to <code>FALSE</code></p></td>
     </tr>
     </table>
     
@@ -147,7 +142,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Charlie Thompson.</p>
+  <p>Developed by Charlie Thompson, Josiah Parry, Donal Phipps, Tom Wolff.</p>
 </div>
 
 <div class="pkgdown">
